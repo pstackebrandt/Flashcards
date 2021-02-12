@@ -251,6 +251,15 @@ files:
         }
     );
   learner_created: false
+- name: src/TestLang.html
+  visible: true
+  learner_created: true
+- name: src/stylesheet.css
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/projects/115/stages/626/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: Fri, 12 Feb 2021 15:09:59 UTC
 record: -1

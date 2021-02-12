@@ -1,0 +1,37 @@
+body {
+    background-image: url("https://stepik.org/media/attachments/lesson/374893/world.png");
+    background-color: antiquewhite;
+    font-family: 'Lexend Mega', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2vw;
+    color: darkgrey;
+}
+
+.cardholder {
+    display: flex;
+    left: 30vw;
+    width: 40vw;
+    height: 40vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-around;
+    background-color: transparent;
+}
+
+.card {
+    width: 9vw;
+    height: 9vw;
+    padding: 1vw;
+    margin: 1vw;
+    background-color: aliceblue;
+    color: darkorange;
+    border-radius: 1vw;
+    text-align: center;
+    font-size: 1vw;
+}

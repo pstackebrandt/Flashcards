@@ -3,14 +3,14 @@ hyperskill_project:
   ide_files: https://stepik.org/media/attachments/lesson/384602/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: Thu, 01 Jan 1970 00:00:00 UTC
+update_date: Fri, 12 Feb 2021 12:19:27 UTC
 stages:
 - id: 625
   step: 10245
   is_completed: true
 - id: 626
   step: 10246
-  is_completed: false
+  is_completed: true
 - id: 627
   step: 10247
   is_completed: false
@@ -36,6 +36,8 @@ topics:
     theory_id: 7518
   - title: HTML attributes id and class
     theory_id: 7527
+  - title: The Lang Attribute
+    theory_id: 12212
   - title: Comments
     theory_id: 7502
   - title: What is CSS
@@ -92,3 +94,7 @@ topics:
     theory_id: 10840
   - title: z-index
     theory_id: 11161
+  - title: Transform
+    theory_id: 12204
+  - title: Backface-visibility
+    theory_id: 12219
