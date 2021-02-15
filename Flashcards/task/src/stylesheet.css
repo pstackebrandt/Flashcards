@@ -12,12 +12,12 @@ h1 {
 
 .cardholder {
     display: flex;
+    position: relative;
     left: 30vw;
     width: 40vw;
     height: 40vw;
     flex-direction: row;
     flex-wrap: wrap;
-    position: relative;
     align-items: center;
     justify-content: space-between;
     align-content: space-around;
@@ -25,6 +25,7 @@ h1 {
 }
 
 .card {
+    display: flex;
     width: 9vw;
     height: 9vw;
     padding: 1vw;
@@ -33,5 +34,51 @@ h1 {
     color: darkorange;
     border-radius: 1vw;
     text-align: center;
+    font-size: 1vw;
+
+    position: relative;
+    z-index: 5;
+    transition: all 1s linear;
+    transform-style: preserve-3d; /* required by prop backface-visibility */
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.front_card,
+.back_card {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front_card {
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.back_card {
+    color: orangered;
+    background-color: bisque;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.card:hover .front_card {
+    visibility: hidden;
+}
+
+.card:hover .back_card {
+    visibility: visible;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.long_name {
     font-size: 1vw;
 }
