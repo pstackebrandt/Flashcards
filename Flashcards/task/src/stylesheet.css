@@ -5,6 +5,7 @@ body {
 }
 
 h1 {
+    margin-top: 3vw;
     text-align: center;
     font-size: 2vw;
     color: darkgrey;
@@ -13,39 +14,40 @@ h1 {
 .cardholder {
     display: flex;
     position: relative;
-    left: 30vw;
-    width: 40vw;
-    height: 40vw;
+    left: 18vw;
+    width: 60vw;
+    height: 60vw;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    align-content: space-around;
+    justify-content: center;
+    align-content: center;
     background-color: transparent;
+    margin-top: -3vw;
 }
 
 .card {
     display: flex;
-    width: 20%;
-    height: 20%;
-    padding: 2%;
-    margin: 2%;
+    width: 22%;
+    height: 22%;
+    padding: 1%;
+    margin: 1%;
     background-color: aliceblue;
     color: darkorange;
     border-radius: 1vw;
     text-align: center;
     font-size: 1vw;
-
     position: relative;
-    z-index: 5;
     transition: all 1s linear;
     transform-style: preserve-3d; /* required by prop backface-visibility */
     align-items: center;
     justify-content: center;
     perspective: 1000px;
+    /*flex-grow: 1;*/
 }
-.sub_card {
 
+.card:hover {
+    transform: rotateY(180deg);
 }
 
 .front_card,
@@ -61,40 +63,27 @@ h1 {
     backface-visibility: hidden;
 }
 
-p {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.card:hover .front_card {
+    visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .back_card {
-    color: orangered;
-    background-color: bisque;
+    color: blue;
     visibility: hidden;
     z-index: -1;
-}
-
-.card:hover {
-    transform: rotateY(180deg);
-}
-
-.card:hover .front_card {
-    visibility: hidden;
 }
 
 .card:hover .back_card {
     visibility: visible;
     backface-visibility: visible;
-    /*transform: rotateY(180deg);*/
+    transform: rotateY(180deg);
+    color: deepskyblue;
 }
 
-.card:hover p {
-    visibility: visible;
-    backface-visibility: visible;
-    transform: rotateY(-180deg);
-}
-
-.long_name {
-    font-size: 1vw;
+.card_text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
