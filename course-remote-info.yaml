@@ -13,7 +13,7 @@ stages:
   is_completed: true
 - id: 627
   step: 10247
-  is_completed: false
+  is_completed: true
 topics:
   0:
   - title: IDE

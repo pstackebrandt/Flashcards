@@ -319,11 +319,8 @@ files:
     }
   learner_created: true
 feedback_link: https://hyperskill.org/projects/115/stages/627/implement#comment
-status: Failed
+status: Solved
 feedback:
-  message: |-
-    Wrong answer in test #3
-
-    Each card should have suggested structure - there should be 4 divs for each card.
-  time: Sun, 14 Feb 2021 21:03:31 UTC
+  message: Congratulations!
+  time: Mon, 15 Feb 2021 10:32:21 UTC
 record: -1
