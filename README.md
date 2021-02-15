@@ -1,12 +1,10 @@
-Alt-H1 Flashcards
+# Flashcards
 ## About
 - Training project
 - HTML, CSS
 - Code by Peter Stackebrandt in src only
 - Trainer: Hyperskill/Jetbrains Academy
-
-
-https://hyperskill.org/projects/115
+  - https://hyperskill.org/projects/115
 
 ## Description by Hyperskill
 
